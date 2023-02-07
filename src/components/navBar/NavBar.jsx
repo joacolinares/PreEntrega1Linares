@@ -1,6 +1,6 @@
 import React from 'react'
-import { CartWidget } from './CartWidget'
-import { ItemListContainer } from './ItemListContainer'
+import { CartWidget } from '../CartWidget'
+import { DropdownMenu } from './categorias/DropdownMenu'
 
 export const NavBar = () => {
 
@@ -12,7 +12,7 @@ export const NavBar = () => {
                     <span className="navbar-toggler-icon" />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ItemListContainer />
+                    <DropdownMenu />
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button className="btn btn-outline-success" type="submit">Search</button>

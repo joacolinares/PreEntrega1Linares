@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ItemListContainer = () => {
+export const DropdownMenu = () => {
     return (
         <>
 
@@ -9,11 +9,11 @@ export const ItemListContainer = () => {
 
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Opciones
+                        Categorias
                     </a>
                     <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="#">Comprar</a></li>
-                        <li><a className="dropdown-item" href="#">Vender</a></li>
+                        <li><a className="dropdown-item" href="#">Electronica</a></li>
+                        <li><a className="dropdown-item" href="#">Hogar</a></li>
                         <li><hr className="dropdown-divider" /></li>
                         <li><a className="dropdown-item" href="#">Cuenta</a></li>
                     </ul>
