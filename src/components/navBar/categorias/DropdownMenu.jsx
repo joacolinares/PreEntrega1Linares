@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export const DropdownMenu = () => {
+export const Categorias = () => {
     return (
         <>
 
@@ -12,10 +13,10 @@ export const DropdownMenu = () => {
                         Categorias
                     </a>
                     <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="#">Electronica</a></li>
-                        <li><a className="dropdown-item" href="#">Hogar</a></li>
-                        <li><hr className="dropdown-divider" /></li>
-                        <li><a className="dropdown-item" href="#">Cuenta</a></li>
+                        <li><Link className="dropdown-item" to={"/category/1"}>Silla Gamer</Link></li>
+                        <li><Link className="dropdown-item" to={"/category/2"}>Monitor</Link></li>
+                        <li><Link className="dropdown-item" to={"/category/3"}>Teclado</Link></li>
+                        <li><Link className="dropdown-item" to={"/category/4"}>Mouse</Link></li>
                     </ul>
                 </li>
 

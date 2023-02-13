@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-export const ItemCount = ({ titulo, stock, categoria }) => {
+export const ItemCount = ({ titulo, cantidad, categoria }) => {
     const [contador, setcontador] = useState(0);
     const [carrito, setcarrito] = useState(0)
 
 
     function aumentar() {
-        if (contador < stock) {
+        if (contador < cantidad) {
             setcontador(contador + 1)
-        } else { alert("NO SE PUEDE SUPERAR EL STOCK") }
+        } else { alert("NO SE PUEDE SUPERAR EL cantidad") }
     }
 
     function restar() {
